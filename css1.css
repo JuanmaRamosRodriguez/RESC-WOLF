@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+ 
+}
+
+body {
+  background-image: url("https://img.freepik.com/vector-gratis/fondo-perro-ilustracion-mascotas-lindas_53876-111990.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0px;
+}
+
+div .col-md-12 {
+    padding-right: 0px;
+}
+
+/*Por la derecha no se pone bien*/
+div.row{
+    margin-right: 0px;
+ }
+ 
+ div.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+ }
+/*---*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container .card {
+  position: relative;
+  width: 280px;
+  height: 350px;
+  margin: 45px;
+}
+
+.container .card:nth-of-type(2) {
+  transform: rotate(5deg);
+}
+
+.container .card .image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transform: translate(10px, 10px);
+}
+
+.container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 290px;
+  height: 360px;
+  border:10px solid #fff;
+  z-index: 1;
+  box-shadow: 7px 7px 21px #bdbdbd, -7px -7px 21px #ffffff;
+  background: transparent;
+}
+/*Animaciones de antes de pasar por encima de las cartas*/
+.container .card:nth-of-type(1)::before {
+  filter: url(#wavy1);
+}
+
+.container .card:nth-of-type(2)::before {
+  filter: url(#wavy2);
+}
+
+.container .card:nth-of-type(3)::before {
+  filter: url(#wavy3);
+}
+
+.image1 {
+  background-image: url("perroC.jpg");
+}
+
+.image2 {
+  background-image: url("carta3.png");
+}
+
+.image3 {
+  background-image: url("carta1.png");
+}
+
+svg {
+  width: 0;
+  height: 0;
+}
+/*Dimensiones y ajustes del tamaño de las cartas*/
+.container .card .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 50px 30px 30px 30px;
+  transform: translate(10px, 10px);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  line-height: 1.4;
+  font-size: 20px;
+  opacity: 0;
+  transition-duration: 2s;
+}
+/*Animacion de transición*/
+.container .card:hover .info { 
+  opacity: 5;
+}
