@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12">
                 <!--Banner antes del menú de la página-->
-              <section class="py-5 header text-center">
+              <section class="py-5 header text-center" id="inicio">
                 <div class="container py-5 text-white">
                     <header class="py-5">
                       <h2 class="font-italic mb-1">Salva a los animales, salva a los lobos</h2>
@@ -42,16 +42,17 @@
             <!--Fin banner-->
 
             <!--Inicio menu-->
-            <header class="header sticky-top">
+            <header class="header sticky-top" style="position: fixed; z-index: 100; width: 100%;">
               <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
                   <div class="container"><a class="navbar-brand" href="#">
                       <strong class="h6 mb-0 font-weight-bold text-uppercase">Resc-Wolf</strong></a>
                       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul class="navbar-nav ml-auto">
-                              <li class="nav-item active"><a class="nav-link" href="#">Sobre nosotros <span class="sr-only">(current)</span></a></li>
-                              <li class="nav-item"><a class="nav-link" href="#">Adopta un lobito</a></li>
-                              <li class="nav-item"><a class="nav-link" href="#">Trabaja con nosotros</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                              <li class="nav-item"><a class ="nav-link" href="#info">Sobre nosotros</a></li>
+                              <li class="nav-item"><a class="nav-link" href="#miembros">Miembros</a></li>
+                              <li class="nav-item"><a class="nav-link" href="formulario.html">Trabaja con nosotros</a></li>
                           </ul>
                       </div>
                   </div>
@@ -67,13 +68,13 @@
 <div class="row">
     <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12">
       <!-- Demo content-->
-<section class="py-5 section-1">
+<section class="py-5 section-1" id="info">
   <div class="container py-5 text-center">
       <div class="row">
           <div class="col-lg-8 mx-auto">
-              <h2>NUESTRA LABOR</h2>
-              <p class="text lead">"Rehabilitar animales salvajes que se han visto afectados por el impacto humano.</p><br>
-                <p class="text lead">Devolver a la naturaleza siempre y cuando su salud lo permita. Dar hogar en la reserva a los que no pueden ser liberados."</p>
+              <h2 class="h2-2">NUESTRA LABOR</h2>
+              <p class="textito2">"Rehabilitar animales salvajes que se han visto afectados por el impacto humano.</p><br>
+                <p class="textito2">Devolver a la naturaleza siempre y cuando su salud lo permita. Dar hogar en la reserva a los que no pueden ser liberados."</p>
           </div>
       </div>
   </div>
@@ -85,7 +86,7 @@
           <div class="col-lg-8 mx-auto">
             <div class="col-lg-8 mx-auto">
               <h2>¿Qué es lo que somos y qué hacemos?</h2>
-              <p class="text-muted lead"><b>RESC-WOLF </b> es una organización sin ánimo de lucro donde velamos por el bienestar de la fauna salvaje de nuestros 
+              <p class="textito"><b>RESC-WOLF </b> es una organización sin ánimo de lucro donde velamos por el bienestar de la fauna salvaje de nuestros 
                 bosques que seve afectada por el impacto humano,  <b>sobre todo a los lobos que dejaron sus manadas. </b> Rehabilitamos y recuperamos animales heridos, huérfanos o capturados de forma 
                 ilegal y tratamos de devolverlos a su hábitat natural si su salud lo permite. De lo contrario, se quedan a vivir en la reserva. 
                 <b>Hay casos en los que es imposible recuperar la salud óptima</b> del animal para ser devuelto a la naturaleza.</p>
@@ -100,7 +101,7 @@
       <div class="row">
           <div class="col-lg-8 mx-auto">
               <h2>Demo section 3</h2>
-              <p class="text-muted lead">
+              <p class="textito">
                 A partir de del <b>13 de enero de 2023</b> inauguramos un programa de reintroducción en la 
                 naturaleza de animales recuperados por la reserva de <b>Wolf-Resurrection</b>, tratando de salvar aquellos animales en peligro de extinción,
                 como bien pueden ser los lobos que se alejan de la manada y mueren por llevar una vida  solitaria .
@@ -114,8 +115,8 @@
   <div class="container py-5 text-center">
       <div class="row">
           <div class="col-lg-8 mx-auto">
-              <h2>Demo section 4</h2>
-              <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+              <h2 class="h2-2">Demo section 4</h2>
+              <p class="textito2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
           </div>
       </div>
   </div>
@@ -123,10 +124,10 @@
 </div>
 
 
-<div class="container-xl">
+<div class="container-xl" id="miembros">
 	<div class="row">
 		<div class="col-lg-8 mx-auto">
-			<h2>Testimonials</h2>
+			<h2>Nuestros Seguidores</h2>
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Carousel indicators -->
 				<ol class="carousel-indicators">
@@ -135,33 +136,39 @@
 					<li data-target="#myCarousel" data-slide-to="2"></li>
                     <li data-target="#myCarousel" data-slide-to="3"></li>
                     <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
 				</ol>   
 				<!-- Wrapper for carousel items -->
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<div class="img-box"><img src="erprimo.png" alt=""></div>
-						<p class="testimonial">Me gustan mucho los animales, pero me gustan más los porros</p>
-						<p class="overview"><b>Erprimo Guerra</b>,Camello</p>
+						<p class="testimonial">Me gustan mucho los animales, hago lo que haga falta por ellos</p>
+						<p class="overview"><b>Manuel Guerra, Panadero</b></p>
 					</div>
 					<div class="carousel-item">
 						<div class="img-box"><img src="arberto.png" alt=""></div>
-						<p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-						<p class="overview"><b>Alberto X el Sabio</b>, Web Developer</p>
+						<p class="testimonial">No hay que opinar si te gustan o no los animales, hay que sentirlo en el pecho</p>
+						<p class="overview"><b>Alberto Rivas, Programador</b></p>
 					</div>
 					<div class="carousel-item">
 						<div class="img-box"><img src="errixi.png" alt=""></div>
-						<p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-						<p class="overview"><b>Ricardo Cabrera</b>, Seo Analyst</p>
+						<p class="testimonial"> Tuve la oportunidad de adoptar un gatito que me econtré en la calle cuando lo necesitaba</p>
+						<p class="overview"><b>Ricardo Cabrera, Carpintero</b></p>
 					</div>
                     <div class="carousel-item">
 						<div class="img-box"><img src="andrea.png" alt=""></div>
-						<p class="testimonial">Siempre happy nunca inhappy, estoy in love con los animales</p>
-						<p class="overview"><b>Andrea Ángel</b>, Cuidadora de Perros</p>
+						<p class="testimonial">Siempre happy nunca inhappy, estoy in love con los animales en cada momento</p>
+						<p class="overview"><b>Andrea Ángel, Veterinaria</b></p>
 					</div>
                     <div class="carousel-item">
 						<div class="img-box"><img src="quile.png" alt=""></div>
-						<p class="testimonial">Siempre happy nunca inhappy, estoy in love con los animales</p>
-						<p class="overview"><b>Andrea Ángel</b>, Cuidadora de Perros</p>
+						<p class="testimonial">Amante de los lobos, son muy especiales</p>
+						<p class="overview"><b>Antonio Quiles, Cazador</b></p>
+					</div>
+                    <div class="carousel-item">
+						<div class="img-box"><img src="paco.png" alt=""></div>
+						<p class="testimonial">Todo en la vida es posible, adoptar un lobo también lo es</p>
+						<p class="overview"><b>Paco, Cocinero</b></p>
 					</div>
 				</div>
 				<!-- Carousel controls -->
@@ -199,5 +206,4 @@
 
 
 https://www.reservawildforest.org/colabora
-https://epicbootstrap.com/snippets/header-blue
-https://freefrontend.com/bootstrap-code-examples/
+
